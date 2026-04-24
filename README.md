@@ -1,55 +1,83 @@
-# Advanced Interactive EDA Dashboard
+# 📊 EDA Dashboard
 
-An interactive **Exploratory Data Analysis (EDA) dashboard** built using **Python** and **Streamlit** to explore, visualize, clean, and download structured datasets through a user-friendly web interface.
-
-
-## Features
-- Upload and preview CSV datasets
-- Automated dataset profiling:
-  - Shape, data types, missing values
-  - Descriptive statistics
-- Interactive visualizations:
-  - Histograms
-  - Box plots
-  - Scatter plots
-  - Correlation heatmaps
-  - Pair plots
-- Outlier detection using the IQR method
-- Interactive data cleaning:
-  - Missing value handling
-  - Outlier removal
-- Download cleaned datasets as CSV
-
-
-## Tech Stack
-- **Language:** Python  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn  
-- **Framework:** Streamlit  
+An interactive, end-to-end Exploratory Data Analysis and ML tool built with Streamlit. Upload any CSV, clean it, visualize it, and train a baseline model — all in one place.
 
 ---
 
-## To run locally
+## 🚀 Features
 
-1. Clone the repository:
-   git clone https://github.com/30antara/EDA_Dashboard.git
-   
-2. Navigate to project director
-   cd EDA_Dashboard
-   
-3. Install dependencies
-   pip install -r requirements.txt
-   
-4. Run the Streamlit app
-   streamlit run app.py
+**Upload & Profile**
+- Auto-detects column types, missing values, duplicates
+- Full column summary (dtype, null count, unique values)
 
+**Data Cleaning**
+- Handle missing values: drop, mean, median, or mode fill
+- Remove duplicate rows
+- Download cleaned dataset as CSV
 
-## Project Motivation
-This project was developed to support data quality assessment, exploratory analysis, and preprocessing as part of machine learning and advanced data analysis workflows.
+**Visualizations**
+- Histogram with adjustable bin count
+- Boxplot with optional category grouping
+- Scatter plot with color encoding
+- Correlation heatmap (diverging colorscale)
+- Bar chart for categorical columns (top-N view)
 
-## Future Enhancements
-  - Performance optimization for large datasets
-  - Support for text-based datasets and NLP-oriented EDA
-  - Enhanced reporting and evaluation features
+**ML Model (Logistic Regression)**
+- Adjustable train/test split
+- Metrics: Accuracy, Precision, Recall, F1
+- Confusion matrix
+- Full classification report
+- Feature importance chart (top 20 features)
 
+---
 
+## 🛠️ Tech Stack
 
+| Layer | Tools |
+|---|---|
+| Frontend | Streamlit |
+| Data | Pandas, NumPy |
+| Visualization | Plotly |
+| ML | Scikit-learn |
+
+---
+
+## ⚙️ Setup & Run
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/30antara/EDA_Dashboard.git
+cd EDA_Dashboard
+```
+
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Run the app**
+```bash
+streamlit run eda_dashboard.py
+```
+
+Opens at `http://localhost:8501`
+
+---
+
+## 📁 Project Structure
+
+```
+EDA_Dashboard/
+├── eda_dashboard.py        # Main application
+├── requirements.txt        # Dependencies
+├── .streamlit/
+│   └── config.toml         # Theme configuration
+└── README.md
+```
+
+---
+
+## 🔗 Links
+
+- **GitHub:** [github.com/30antara](https://github.com/30antara)
+- **LinkedIn:** [linkedin.com/in/antarasinghal](https://linkedin.com/in/antarasinghal)
